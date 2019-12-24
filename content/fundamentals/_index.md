@@ -16,5 +16,6 @@ The following diagram illustrates the concepts we will learn in this chapter. We
 
 Here is an overview of the key concepts we will be 
 ![3-Tier Architecture](/n-tier.jpeg)
+
 TODO: Update the diagram
  
