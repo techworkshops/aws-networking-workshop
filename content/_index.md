@@ -1,7 +1,6 @@
 ---
-title: "Hugo Workshop"
+title: "AWS Networking: From Zero to Hero"
 ---
 
-# Welcome to my Hugo Workshop
+# Welcome to AWS Network Workshop 
 
-Welcome! Please have a seat and relax.

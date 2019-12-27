@@ -1,5 +1,5 @@
 +++
-title = "Fundamentals"
+title = "AWS Network Essentials"
 weight = 1
 chapter = true
 pre = "<b>1. </b>"
@@ -7,7 +7,7 @@ pre = "<b>1. </b>"
 
 ### Chapter 1
 
-# Networking Fundamentals
+# Networking Essentials
 
 Within the AWS console we give you full control to set up your environment securely, which means understanding some key concepts will be important to setup that infrastructure in the best way possible for your use case. 
 We’ll introduce you to key network infrastructure concepts in this post to help get you started down the right path.
