@@ -1,0 +1,14 @@
+{
+    "sqltools.connections": [
+        {
+            "database": "database-1",
+            "dialect": "OracleDB",
+            "name": "Test-CSV",
+            "password": "February2019*",
+            "port": 1521,
+            "server": "database-1.cdketemqkdzv.ap-south-1.rds.amazonaws.com",
+            "username": "admin"
+        }
+    ],
+    "sqltools.useNodeRuntime": true
+}
