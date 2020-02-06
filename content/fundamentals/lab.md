@@ -45,7 +45,7 @@ Choose _public_subnet_1_ and click on "_Create New EIP_" and click on "Create a 
 Repeat the step for _public_subnet_2_
 
 {{% notice tip %}}
-Ensure that NAT gateways are associated to an Availabilty Zone. In production, we need to ensure they are deployed in at least two Availability Zones (AZs) in order to ensure high-availability of Egress internet traffic.
+Ensure that for each availabilty zone, there is a NAT gateway associated. This ensures high-availability of the Egress Internet Traffic from the VPC.
 {{% /notice %}}
 
 #### Step 4: Configure the Route Tables
@@ -69,7 +69,7 @@ Select private_subnet_1 and private_subnet_2 to the route table as shown in the 
 Now the public subnets are associated with Internet Gateway and Private Subnets are associated with the NAT gateway via the Route Tables.
 ![Created Routes](/chapter1/created_route_tables.png?classes=border,shadow)
 
-Congratulations ! You have created a network stack for a n-tier application from scratch. We will now test the connectivity by deploying EC2 instances.
+Congratulations ! You have created a network stack for a 2-tier application from scratch. We will now test the connectivity by deploying EC2 instances.
 
 #### Deploy EC2 instance in the Public Subnet
 
@@ -80,19 +80,19 @@ Navigate to [Key Pairs](https://console.aws.amazon.com/ec2/home?region=us-east-1
  3. Navigate to [Intances](https://console.aws.amazon.com/ec2/home?region=us-east-1#Instances:sort=statusChecks)
  4. Click on "_Launch Instance_" button.
  5. Choose the AMI that is titled as "Amazon Linux  AMI 2018.03.0"
- ![Choose Image](/chapter1/choose_ami.png?classes=border,shadow)
+ ![Choose AMI](/chapter1/choose_ami.png?classes=border,shadow)
  6. In the next page, choose instance type as "t2.micro" and click on "Configure Instance Details" button
  7. In the page "Configure Instance Details", choose the VPC that we created earlier and _public_subnet_2_ and click on "_Add Storage_".
- ![Choose Image](/chapter1/configure_instance.png?classes=border,shadow)
+ ![Configure Instance](/chapter1/configure_instance.png?classes=border,shadow)
  8. Leave the default details mentioned in "Add Storage" page and click on "Add Tags"
  9. Next, choose a "friendly name" for your instance. This name, more correctly known as a tag, will appear in the console once the instance launches. I named it "Web Server"
- ![Choose Image](/chapter1/add_tags.png?classes=border,shadow)
+ ![Add Tags](/chapter1/add_tags.png?classes=border,shadow)
  10. Move on to the next step "Configure Security Group". Provide a friendly name and click on "Add Rule" and select SSH. Click on "Next: Launch Instance"  
- ![Choose Image](/chapter1/security_group.png?classes=border,shadow)
+ ![Configure Security Group](/chapter1/security_group.png?classes=border,shadow)
  11. Select the keypair that we selected in step 2 and click on "I acknowledge" checkbox  and launch
- ![Choose Image](/chapter1/launch.png?classes=border,shadow)
+ ![Launc](/chapter1/launch.png?classes=border,shadow)
  12. Navigate to [Intances](https://console.aws.amazon.com/ec2/home?region=us-east-1#Instances:sort=statusChecks). You should now see the instance starting up. Wait for the instance to startup. Note down the public ip.
- ![Choose Image](/chapter1/running_instance.png?classes=border,shadow)
+ ![Running Instances](/chapter1/running_instance.png?classes=border,shadow)
  13. Once the instance has started up, click the Connect button up top. There will be a window popping up with an example SSH command. This will get us in, but remember to take the location of the .pem file into account when you run it. In a terminal, run these:
  ```
  ssh -i /path_to/network-workshop.pem ec2-user@your_public_ip

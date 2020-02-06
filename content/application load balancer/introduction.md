@@ -5,14 +5,6 @@ date: 2019-12-20T10:22:08+05:30
 weight: 1
 ---
 
-| Item                        | Description                                                                                                                                                                                                         |
-| --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Level**                   | Beginner                                                                                                                                                                                                            |
-| **Duration**                | 30 minutes                                                                                                                                                                                                          |
-| **AWS Services & Features** | AWS Console, VPC, Subnets, InternetGateway, Elastic IP, NAT Gateway, RouteTables, Network ACLs, Security Groups & EC2 Instances                                               |
-| **AWS Region**              | US East 1 - N.Virginia                                                                                                                                                                                              |
-| **Cost Estimate**           | If you are still in free-tier, this lab will cost \$0. However, if you are not on free-tier, you can expect to see a charge of approximately, **\$0.09 for 1 hour** of running the lab. |
-
 #### Overview
 
 In this lab, we will create a network stack required to host a highly available 2-tier web application. 

@@ -1,7 +1,7 @@
 baseURL = "/"
 languageCode = "en-us"
 theme = "learn"
-
+title = "Scalable Networking on AWS"
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
 

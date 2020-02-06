@@ -99,4 +99,4 @@ Navigate to [Key Pairs](https://console.aws.amazon.com/ec2/home?region=us-east-1
  ```
  We'll answer yes to the prompt asking if we're sure we want to connect, and should land at a command prompt in our bastion host.
 
- TODO: Correct the errors in the above and write the steps for private ec2 instance.
+ TODO: Add steps for EC2 in Private Subnet and how to test connectivity between bastion host and private subnet.
